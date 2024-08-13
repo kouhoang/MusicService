@@ -52,4 +52,4 @@
 
 - **Thêm bài hát mới:**
   - Thêm các file nhạc vào thư mục `res/raw/`.
-  - Cập nhật danh sách bài hát trong Fragment để thêm bài mới vào ứng dụng.
+  - Cập nhật danh sách bài hát trong TracksFragments để thêm bài mới vào ứng dụng.
