@@ -11,15 +11,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/now_playing"
+        android:text="Nhạc trung của Kou"
         android:textSize="24sp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-light"/>
 
     <ImageView
         android:id="@+id/track_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/image_1"
         android:layout_below="@id/now_playing"
         android:layout_centerHorizontal="true" />
@@ -28,18 +29,18 @@
         android:id="@+id/track_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:textSize="24sp"
         android:layout_below="@id/track_image"
-        android:layout_alignParentStart="true"
-        android:fontFamily="sans-serif-condensed-medium"/>
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
 
     <SeekBar
         android:id="@+id/seek_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/track_title" />
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/play_image" />
 
     <TextView
         android:id="@+id/current_time"
@@ -53,8 +54,8 @@
 
     <TextView
         android:id="@+id/track_length"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:textSize="12sp"
         android:layout_below="@id/seek_bar"
         android:layout_alignParentEnd="true"
@@ -65,20 +66,20 @@
         android:id="@+id/play_image"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/ic_play"
-        android:layout_below="@id/seek_bar"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
     <ImageView
         android:id="@+id/pause_image"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/ic_pause"
-        android:visibility="invisible"
-        android:layout_below="@id/seek_bar"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"/>
 
     <ImageView
         android:id="@+id/next_track"

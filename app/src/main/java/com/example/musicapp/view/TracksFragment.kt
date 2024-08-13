@@ -27,7 +27,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.time.Duration.Companion.milliseconds
 
-private const val LAST_TRACK_POS = 3
+private const val LAST_TRACK_POS = 4
 private const val FIRST_TRACK_POS = 0
 
 class TracksFragment :
@@ -52,7 +52,7 @@ class TracksFragment :
     private lateinit var trackTitle: TextView
     private lateinit var currentTime: TextView
     private lateinit var trackLength: TextView
-    private lateinit var trackImage: ImageView // Thêm biến này
+    private lateinit var trackImage: ImageView
 
     private val connection =
         object : ServiceConnection {
