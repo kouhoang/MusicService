@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MusicApp</string>
+    <string name="app_name">MusicService</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="now_playing">Now playing</string>
+    <string name="first_track"></string>
+    <string name="last_track">Hết bài</string>
+    <string name="track_start_time">0:00</string>
 </resources>
